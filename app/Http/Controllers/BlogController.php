@@ -72,6 +72,7 @@ class BlogController extends Controller
      */
     public function update(Request $request, $id)
     {
+        // this is just a test
         Blog::findOrFail($id)->update( $request->all() );
     }
 
